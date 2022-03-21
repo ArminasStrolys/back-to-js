@@ -1,7 +1,9 @@
-@import 'base';     //Pagrindinis
-@import 'var';      //Kintamieji
-@import 'nav';      //Navigacija
+// @import '~bootstrap';     //Pagrindinis
+@import 'base';             //Pagrindinis
+@import 'var';             //Kintamieji
+@import 'nav';             //Navigacija
 @import './components/error';
 @import './mixins/button';
 @import 'todo';
 @import 'article';
+@import 'main';

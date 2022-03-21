@@ -46,3 +46,25 @@ main article a {
   padding: 10px;
   text-align: center;
 }
+
+main {
+  width: 30%;
+  margin: 0 auto;
+  color: white;
+}
+main div {
+  padding: 15px;
+  margin: 20px;
+}
+main div:nth-child(1) {
+  background-color: red;
+}
+main div:nth-child(2) {
+  background-color: #0077ff;
+}
+main div:nth-child(3) {
+  background-color: black;
+}
+main div:nth-child(4) {
+  background-color: #21c72f;
+}
