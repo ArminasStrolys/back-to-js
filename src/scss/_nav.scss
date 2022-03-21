@@ -1,0 +1,24 @@
+
+nav{
+    background-color: $navBg;
+    li{
+        list-style: none;
+        padding: 10px;
+        display: inline-block;
+        @media (max-width: 300px){
+            nav li {
+                display: block;
+            }
+        }
+        background-color: $navItemBg;
+        a {
+            color: $navLink;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover{
+                color: $navHover;
+            }
+        }
+    }
+}

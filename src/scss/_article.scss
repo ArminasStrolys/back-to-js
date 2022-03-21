@@ -1,0 +1,7 @@
+main{
+    article{
+        a{
+            @include btn(#aabccd, 10px)
+        }
+    }
+}

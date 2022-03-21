@@ -1,1 +1,48 @@
+* {
+  box-sizing: border-box;
+}
 
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+nav {
+  background-color: #eeeeee;
+}
+nav li {
+  list-style: none;
+  padding: 10px;
+  display: inline-block;
+  background-color: #c2c2c2;
+}
+@media (max-width: 300px) {
+  nav li nav li {
+    display: block;
+  }
+}
+nav li a {
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav li a:hover {
+  color: red;
+}
+
+.error, section p {
+  border-radius: 10px;
+  background-color: #424242;
+  color: #b97d34;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #aabccd;
+}
+
+main article a {
+  border-radius: 10px;
+  background-color: #aabccd;
+  padding: 10px;
+  text-align: center;
+}

@@ -20,7 +20,7 @@ _modules_students__WEBPACK_IMPORTED_MODULE_0__["default"].forEach(function (e) {
   li.innerHTML = e.name;
 
   if (e != '') {
-    $1('ul')[0].appendChild(li);
+    $1('ul')[1].appendChild(li);
   }
 });
 

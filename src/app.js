@@ -10,6 +10,6 @@ students.forEach(e => {
     let li = document.createElement('li');
     li.innerHTML = e.name;
     if (e != ''){
-      $1('ul')[0].appendChild(li);
+      $1('ul')[1].appendChild(li);
     }
   })
