@@ -1,52 +1,63 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/app.js":
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_students__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/students */ "./src/modules/students.js");
+// import students from './modules/students';
+var $1 = document.querySelectorAll.bind(document); //-----------------------------------------------
+// let list = document.createElement('ul');
+// document.body.appendChild(list);
+// students.forEach(e => {
+//     console.log(e.name);
+//     let li = document.createElement('li');
+//     li.innerHTML = e.name;
+//     if (e != ''){
+//       $1('ul')[1].appendChild(li);
+//     }
+//   })
+//-----------------------------------------------
 
-var $1 = document.querySelectorAll.bind(document);
-var list = document.createElement('ul');
-document.body.appendChild(list);
-_modules_students__WEBPACK_IMPORTED_MODULE_0__["default"].forEach(function (e) {
-  console.log(e.name);
-  var li = document.createElement('li');
-  li.innerHTML = e.name;
-
-  if (e != '') {
-    $1('ul')[1].appendChild(li);
-  }
-});
-
-/***/ }),
-
-/***/ "./src/modules/students.js":
-/*!*********************************!*\
-  !*** ./src/modules/students.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 var students = [{
   id: 1,
-  name: 'John'
+  firstName: 'Jonas',
+  lname: 'Jonaitis',
+  shool: 'BIT',
+  subjects: {
+    js: 10,
+    react: 8,
+    vue: 5
+  }
 }, {
   id: 2,
-  name: 'Matt'
+  firstName: 'Petras',
+  lname: 'Petraitis',
+  shool: 'BIT',
+  subjects: {
+    js: 6,
+    react: 5,
+    vue: 2
+  }
 }, {
   id: 3,
-  name: 'Glenn'
-}];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (students);
+  firstName: 'Vardenis',
+  lname: 'Pavardenis',
+  shool: 'BIT',
+  subjects: {
+    js: 10,
+    react: 10,
+    vue: 7
+  }
+}]; // for(let student of students){
+//   for(let studentData in student){
+//     for(let sub in student[studentData]){
+//       console.log(student[studentData]);
+//     }
+//   }
+// }
 
 /***/ }),
 
@@ -56,6 +67,7 @@ var students = [{
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -121,18 +133,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	
